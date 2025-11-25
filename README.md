@@ -81,11 +81,11 @@ modelscope download --model 'Qwen/Qwen2.5-VL-3B-Instruct' --local_dir your-model
 You can run everything with the provided script:
 ```bash
 bash scripts/run_search.sh \
-    --model_path your-model-path \
-    --model_name Qwen2.5-VL-3B-Instruct \
-    --question Who is the character in the image?
-    --image_url your-image-url \
-    --api_key your-serpapi-key
+    --model.path your-model-path \
+    --model.name Qwen2.5-VL-3B-Instruct \
+    --data.question Who is the character in the image?
+    --data.image_url your-image-url \
+    --data.api_key your-serpapi-key
 ```
 
 ---
