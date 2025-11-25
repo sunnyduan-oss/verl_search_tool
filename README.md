@@ -48,8 +48,8 @@ This project is built on the **volcengine/VERL** framework:
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/sunnyduan-oss/verl_search.git
-cd verl_search
+git clone https://github.com/sunnyduan-oss/verl_search_tool.git
+cd verl_search_tool
 ```
 
 ### 2. Environment Setup
