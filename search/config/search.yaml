@@ -1,0 +1,36 @@
+model:
+  path: /root/autodl-tmp/models/Qwen2.5-VL-3B-Instruct
+  name: Qwen2.5-VL-3B-Instruct
+  trust_remote_code: True
+  is_evaluate: True 
+  
+data:
+  question: Who is the character in the image?
+  image_url: https://i.imgur.com/5bGzZi7.jpg
+  batch_size: 1  
+  n_samples: 1
+  api_key: 9e1d4a5257c55bf7ca3c2bd8232157419fa3136740dd2048ed2ffb59cb39ddd8
+
+
+rollout:
+  temperature: 1.0
+  top_k: -1
+  top_p: 1
+  prompt_length: 2048
+  response_length: 512
+  do_sample: true
+  n: 1
+  validate: false
+  val_kwargs:
+    top_k: -1
+    top_p: 1.0
+    temperature: 0
+    n: 1
+    do_sample: false
+
+ray_kwargs:
+  ray_init:
+    local_mode: false
+    runtime_env:
+      env_vars:
+        TOKENIZERS_PARALLELISM: "true"
